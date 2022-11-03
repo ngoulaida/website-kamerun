@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document für die Seite Über Kamerun*/
+
+img{
+	width: 700px;
+	height: 700px;
+}
+
+.headline1{
+	text-align: center;
+}
+
+.text_container{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.h_image, .text_x{
+	padding-left: 350px;
+	padding-right: 350px;
+}
+
+.cont{
+	background-color: #FFFFFF;
+}
+

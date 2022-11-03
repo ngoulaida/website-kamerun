@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Kultur</title>
+		<link rel="stylesheet" href="css/kultur.css">
+		<link rel="stylesheet" href="css/index.css">		
+	</head>
+	<body>
+		<div class="navi">
+			<h1 class="headline">
+				Blick Auf<br> <span class="text_k">Kamerun</span>
+			</h1>			
+			<div class="menu">
+				<a href="index.html">Startseite</a>
+				<div class="dropdown">
+					<a class="dropbtn" href="kamerun.html">Über Kamerun</a>
+					<div class="dropdown-content">
+						<a href="sehenswuerdigkeiten.html">Sehenswürdigkeiten</a>
+						<a href="kultur.html">Kultur</a>
+						<a href="essen.html">Essen & Trinken</a>
+						<a href="natur.html">Natur</a>
+			        </div>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn" href="#">Reise</a>
+					<div class="dropdown-content">
+						<a href="reise.html">Visum/Gesundheit</a>
+			    	</div>
+				</div>
+				<a href="kontakt.html">Kontakt</a>	
+			</div>
+		</div>			
+		<div class="navigation">
+			<h2 class="title1">Häuptlingshäuser</h2>
+			<h3 class="title">Königspalast von Mbouda</h3>
+			
+			<div class="a_imgK">
+				<img class="a_img1" alt="" src="img/kultur/pic4.jpg">
+            	<img class="a_img2" alt="" src="img/kultur/mbouda.jpg">
+			</div>          
+          <h3 class="title">Königspalast von Bamendjou</h3>			
+			<div class="a_imgK">
+				<img class="a_img1" alt="" src="img/kultur/bamendjou.jpg">
+          		<img class="a_img2" alt="" src="img/kultur/bamenjou1.jpg">
+			</div>          
+          <h3 class="title">Königspalast von Foumban</h3>
+			<div class="a_imgK">
+				<img class="a_img1" alt="" src="img/kultur/foumban2.jpg">
+          		<img class="a_img2" alt="" src="img/kultur/foumban.jpg">
+			</div>          
+          <h3 class="title">Königspalast von Bafang</h3>
+			<div class="a_imgK">
+				<img class="a_img2" alt="" src="img/kultur/pic10.jpg">
+				<img class="a_img1" alt="" src="img/kultur/Bana.jpg">          		
+			</div>	
+		
+		<h2 class="title">Die Traditionelle Kleidung</h2>		
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 10</div>
+				<img alt="" src="img/kultur/pic7.jpg" style="width:100%">
+			</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 10</div>
+		  <img alt="" src="img/kultur/pic1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 10</div>
+		  <img alt="" src="img/kultur/pic9.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 10</div>
+		  <img alt="" src="img/kultur/t1.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 10</div>
+		  <img alt="" src="img/kultur/t2.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 10</div>
+		  <img alt="" src="img/kultur/t4.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">7 / 10</div>
+		  <img alt="" src="img/kultur/t5.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">8 / 10</div>
+		  <img alt="" src="img/kultur/t6.jpg" style="width:100%">
+		</div>
+			
+		<div class="mySlides fade">
+		  <div class="numbertext">9 / 10</div>
+		  <img alt="" src="img/kultur/t7.jpg"  style="width:100%">
+		</div>	
+
+		<div class="mySlides fade">
+		  <div class="numbertext">10 / 10</div>
+		  <img alt="" src="img/kultur/t8.jpg" style="width:100%">
+		</div>		
+		
+			
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+			<span class="dot" onclick="currentSlide(7)"></span>
+			<span class="dot" onclick="currentSlide(8)"></span>
+			<span class="dot" onclick="currentSlide(9)"></span>
+			<span class="dot" onclick="currentSlide(10)"></span>
+			<span class="dot" onclick="currentSlide(11"></span>
+		</div>
+		
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+		</div>			
+		<div class="l-content">
+			<span class="l-text">(c) 2022 - Discover Cameroon</span> | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+		</div>
+	</body>
+</html>

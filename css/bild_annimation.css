@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document für die Annimation Bild  */
+
+.bild_ani {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  /*display: block;
+  width: 100%;*/
+	width: 60%;
+	padding-left: 50px;
+	
+	height: 700px;
+	object-fit:fill;
+	margin-top: 16px;
+	
+	/*object-position:50% 15%; */
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#D895F6;
+  overflow: hidden;
+  width: 30%; 
+  height: 30%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.bild_ani:hover .overlay2 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.test {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document für Kontakt Formular */
+
+.contact{
+	background-color:#A5D9A3;
+}
+
+.kon{
+	color: #D12326;
+}
+
+.kon, .t_kon{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.t_kon1{
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 50px;
+}
